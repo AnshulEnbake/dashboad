@@ -93,3 +93,29 @@ Processing by RailsAdmin::MainController#dashboard as HTML
   Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.5ms)
   Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (10.3ms)
 Completed 200 OK in 950ms (Views: 774.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-28 13:15:18 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/railties-4.2.5.1/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 42ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-01-28 13:15:26 +0530
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (16.3ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (12.6ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (22.7ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (5.5ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (9.4ms)
+Completed 200 OK in 922ms (Views: 763.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-01-28 13:17:59 +0530
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (18.4ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (14.2ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (24.0ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.2ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (10.3ms)
+Completed 200 OK in 970ms (Views: 801.5ms | ActiveRecord: 0.0ms)
