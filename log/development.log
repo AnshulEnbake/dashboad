@@ -167,3 +167,192 @@ Processing by RailsAdmin::MainController#dashboard as HTML
   Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.7ms)
   Rendered /home/enbake/.rvm/gems/ruby-2.1.5/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (10.4ms)
 Completed 200 OK in 932ms (Views: 752.5ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-01-28 16:47:23 +0530
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /home/enbake/.rvm/gems/ruby-2.4.4/gems/activerecord-5.0.0/lib/active_record/transactions.rb:283)
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 24ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-01-28 16:47:29 +0530
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (17.0ms)
+Started GET "/admin" for 127.0.0.1 at 2019-01-28 16:47:34 +0530
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (14.5ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (7.0ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (17.1ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.4ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (10.7ms)
+Completed 200 OK in 16557ms (Views: 16375.3ms | ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (key must be 32 bytes):
+  
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (7.9ms)
+activesupport (5.0.0) lib/active_support/message_encryptor.rb:72:in `key='
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (17.0ms)
+activesupport (5.0.0) lib/active_support/message_encryptor.rb:72:in `_encrypt'
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.3ms)
+activesupport (5.0.0) lib/active_support/message_encryptor.rb:58:in `encrypt_and_sign'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:592:in `commit'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:465:in `[]='
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+actionpack (5.0.0) lib/action_dispatch/middleware/session/cookie_store.rb:117:in `set_cookie'
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (10.6ms)
+rack (2.0.6) lib/rack/session/abstract/id.rb:363:in `commit_session'
+Completed 200 OK in 11466ms (Views: 11463.8ms | ActiveRecord: 0.0ms)
+
+
+rack (2.0.6) lib/rack/session/abstract/id.rb:234:in `context'
+  
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+ArgumentError (key must be 32 bytes):
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  
+activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+activesupport (5.0.0) lib/active_support/message_encryptor.rb:72:in `key='
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0) lib/active_support/message_encryptor.rb:72:in `_encrypt'
+activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/message_encryptor.rb:58:in `encrypt_and_sign'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:592:in `commit'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:465:in `[]='
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/session/cookie_store.rb:117:in `set_cookie'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:363:in `commit_session'
+actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:234:in `context'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/home/enbake/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/home/enbake/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/home/enbake/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/home/enbake/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/home/enbake/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+/home/enbake/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.4ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (127.7ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (140.1ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (217.0ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (80.3ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.0ms)
+Started GET "/" for 127.0.0.1 at 2019-01-28 16:50:30 +0530
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /home/enbake/.rvm/gems/ruby-2.4.4/gems/activerecord-5.0.1/lib/active_record/railtie.rb:113)
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 23ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-01-28 16:50:34 +0530
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (29.1ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (9.0ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (18.0ms)
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.1ms)
+  Rendering /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/enbake/.rvm/gems/ruby-2.4.4/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (8.1ms)
+Completed 200 OK in 6414ms (Views: 6265.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.self-40b58265c69a6e915ffbbded756b861994c443a26ede3c6fa690c35f4faf5475.css?body=1" for 127.0.0.1 at 2019-01-28 16:50:41 +0530
